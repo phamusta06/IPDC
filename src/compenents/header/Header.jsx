@@ -3,7 +3,7 @@ import SearchIcon from "../../assets/search.png"
 
 const Header = () => {
   return (
-    <nav className=" flex items-center  justify-between  py-[25px] px-[130px] z-10  overflow-hidden text-center">
+    <nav className=" flex items-center  justify-between  py-[25px] px-[130px] z-10  overflow-hidden text-center ">
       <div><img src={logo} alt="IPDC logo"  className="w-[109px] h-[53px] cursor-pointer"/>
       </div>
       <div className="flex justify-between ">
