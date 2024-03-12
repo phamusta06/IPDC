@@ -35,11 +35,11 @@ const Container = () => {
     <div>
       <div className=" absolute right-0 top-0 h-[682px] w-[50%] z-[-1] bg-[#FFEAF5] Pt-20"></div>
       <div>
-        <div className="flex justify-end z-0">
+        <div className="hidden md:flex justify-end z-0">
           <img
             src={familyImg}
             alt=""
-            className="absolute h-[690px] w-[90%] md:w-[62%] md:top-28 md:right-0 "
+            className="md:absolute md:h-[690px]  md:w-[62%] md:top-28 md:right-0 "
           />
         </div>
         <div className="w-full flex md:justify-center justify-start z-10 ">
@@ -49,15 +49,15 @@ const Container = () => {
           </button>
         </div>
         <div className="flex justify-between md:pr-12">
-          <div className="pl-[135px] space-y-10">
-            <h1 className="font-[metropolis-bold] max-w-[453px] text-[63px] font-extrabold leading-[68px]">
+          <div className="md:pl-[135px] space-y-10 max-w-[50%]">
+            <h1 className="font-[metropolis-bold] md:max-w-[453px] md:text-[63px] text-[30px] font-extrabold  md:leading-[68px]">
               Chase Your Dream with us
             </h1>
-            <p className="max-w-[380px]  text-[--gray-color] text-[#010101]">
+            <p className="md:max-w-[380px]  text-[--gray-color] text-[#010101]">
               The harder you work for something, the greater you’ll feel when
               you achieve it.
             </p>
-            <div className="space-x-6">
+            <div className="space-x-6 max-w-md ">
               <button
                 className={`bg-[--pink-color] text-white font-light h-[46px] w-[157px] font-[Rubik] rounded-md tracking-[2px]`}
               >
@@ -68,10 +68,12 @@ const Container = () => {
               </button>
             </div>
           </div>
-          <button className="flex  w-[191px] bg-white h-[71px]   justify-center items-center rounded-[55px]  shadow-2xl mt-7 ml-[27px] outline-none ">
+         <div>
+         <button className="flex  w-[191px] bg-white h-[71px]   justify-center items-center rounded-[55px]  shadow-2xl md:mt-7  mr-3 md:mr-0 md:ml-[27px] outline-none ">
             <img src={house} alt="" className="w-[25.54px] mr-5 " />
             Home Loan
           </button>
+         </div>
         </div>
         <div className="pl-[135px]  flex pt-52 space-x-4">
           <img src={telephone} alt="" />
@@ -209,7 +211,7 @@ const Container = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam, dapibus mattis vel feugiat erat tortor eleifend.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px]">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 content-center gap-14 pl-[100px] ">
           <StaticResult static={<spa className="font-[metropolis-bold] text-[36px] text-[--pink-color]"> 57.6 <span className="font-[metropolis-bold] text-[26px]">bn</span></spa>  } description="LOAN PORTFOLIO" />
           <StaticResult
             static="0.95%"
@@ -219,7 +221,7 @@ const Container = () => {
             static="388.5%"
             description="CLASSIFIED LOAN Coverage"
           />
-          <StaticResult static={<spa className="font-[metropolis-bold] text-[36px] text-[--pink-color]"> 50.4 <span className="font-[metropolis-bold] text-[26px]">bn</span></spa>  }
+          <StaticResult static={<spa className="font-[metropolis-bold] text-[36px] "> 50.4 <span className="font-[metropolis-bold] text-[26px]">bn</span></spa>  }
            description="Deposit" />
           <StaticResult static="6.1 bn" description="Shareholders equity" />
           <StaticResult static="18.51%" description="Capital Adequacy Ratio" />

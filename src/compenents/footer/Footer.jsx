@@ -8,7 +8,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <>
-      <div className="flex justify-between px-[130px] footer py-[64px] mb-24 ">
+      <div className="flex justify-between px-[130px] footer py-[64px] mb-24  ">
         <div className="h-[192px] leading-[30px] flex flex-col justify-between">
           <h1>About the company</h1>
           <div>
