@@ -97,7 +97,7 @@ const Container = () => {
             sagittis.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px] ">
+        <div className="grid px-12 sm:grid-cols-2 md:grid-cols-3 md:px-20 lg:grid-cols-4 lg:px-28 xl:grid-cols-5 2xl:grid-cols-6 2xl:px-32 gap-14 justify-center">
           <CardExperience
             logo={Integrity}
             title={"Integrity"}
@@ -164,7 +164,7 @@ const Container = () => {
         </div>
       </div>
       <div className="flex space-x-25 ">
-        <img src={imgIPCD} alt="" className=" w-[43%]   h-[610px]" />
+        <img src={imgIPCD} alt="" className=" w-[43%] h-[610px] object-cover" />
 
         <div className="flex flex-col justify-center  px-24">
           <h2 className=" font-[metropolis-bold] text-[32px] leading-[38px]  text-[#363940] pb-4 ">
