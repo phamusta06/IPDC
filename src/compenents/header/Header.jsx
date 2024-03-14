@@ -1,9 +1,20 @@
+import { useState } from "react"
 import logo from "../../assets/ipcd.png"
 import SearchIcon from "../../assets/search.png"
+import { useEffect } from "react";
 
 const Header = () => {
+  const[openNav,setOpenNav]=useState(false);
+
+  useEffect(()=>{
+    window.addEventListener(
+      "resize",()=>window.innerWidth >= 900 && setOpenNav(false)
+    )
+  },[])
+
   return (
-    <nav className=" flex items-center  justify-between  py-[25px] px-[130px] z-10  overflow-hidden text-center ">
+    <nav className=" relative flex items-center  justify-between  py-[25px] px-[130px] z-10  overflow-hidden text-center ">
+      <div className=" absolute right-0 top-0 h-full w-[50%] z-[-1] bg-[#FFEAF5] Pt-20"></div>
       <div><img src={logo} alt="IPDC logo"  className="w-[109px] h-[53px] cursor-pointer"/>
       </div>
       <div className="flex justify-between ">

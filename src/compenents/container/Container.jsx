@@ -7,6 +7,7 @@ import youtube from "../../assets/youtube.png";
 import instagram from "../../assets/instagram.png";
 import more from "../../assets/more.png";
 import linkedin from "../../assets/linkedin.png";
+import "./container.css"
 import {
   Diversity,
   Integrity,
@@ -32,9 +33,9 @@ import Footer from "../footer/Footer";
 
 const Container = () => {
   return (
-    <div>
-      <div className=" absolute right-0 top-0 h-[682px] w-[50%] z-[-1] bg-[#FFEAF5] Pt-20"></div>
-      <div>
+    <div className=" ">
+      
+      <div className="relative Dream mb-36">
         <div className="hidden md:flex justify-end z-0">
           <img
             src={familyImg}
@@ -97,8 +98,7 @@ const Container = () => {
             sagittis.
           </p>
         </div>
-        <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 xl:grid-cols-4 2xl:grid-cols-12 2xl:flex 2xl:justify-between gap-14 pl-[100px] pr-[100px] ">
-          <CardExperience
+        <div className="grid px-12 sm:grid-cols-2 md:grid-cols-3 md:px-20 lg:grid-cols-4 lg:px-28 xl:grid-cols-5 2xl:grid-cols-6 2xl:px-32 gap-14 justify-center">          <CardExperience
             logo={Integrity}
             title={"Integrity"}
             details={
@@ -164,7 +164,7 @@ const Container = () => {
         </div>
       </div>
       <div className="flex space-x-25 ">
-        <img src={imgIPCD} alt="" className=" w-[43%]   h-[610px]" />
+      <img src={imgIPCD} alt="" className=" w-[43%] h-[610px] object-cover" />
 
         <div className="flex flex-col justify-center  px-24">
           <h2 className=" font-[metropolis-bold] text-[32px] leading-[38px]  text-[#363940] pb-4 ">
