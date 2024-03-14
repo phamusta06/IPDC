@@ -44,7 +44,7 @@ const Container = () => {
           />
         </div>
         <div className="w-full flex md:justify-center justify-start z-10 ">
-          <button className="flex  w-[191px] bg-white h-[71px]  justify-center items-center rounded-[55px]  shadow-2xl -mr-5 mt-7 ml-[27px] outline-none ">
+          <button className="flex  w-[191px] bg-white h-[71px]  md:justify-center items-center rounded-[55px]   shadow-2xl -mr-5 mt-7 ml-[27px] outline-none ">
             <img src={car} alt="" className="w-[25.54px] mr-4 mr-5 " />
             Car Loans
           </button>

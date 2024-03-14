@@ -1,24 +1,22 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import logo from "../../assets/ipcd.png"
 import SearchIcon from "../../assets/search.png"
 import { useEffect } from "react";
+import { CgMenuMotion } from "react-icons/cg";
+import "./Header.css"
 
 const Header = () => {
   const[openNav,setOpenNav]=useState(false);
-
-  useEffect(()=>{
-    window.addEventListener(
-      "resize",()=>window.innerWidth >= 900 && setOpenNav(false)
-    )
-  },[])
+  let Nav=useRef();
 
   return (
-    <nav className=" relative flex items-center  justify-between  py-[25px] px-[130px] z-10  overflow-hidden text-center ">
-      <div className=" absolute right-0 top-0 h-full w-[50%] z-[-1] bg-[#FFEAF5] Pt-20"></div>
+
+
+    <nav ref={Nav} className="NavBar relative flex items-center  justify-between  py-[25px] px-3 lg:px-[130px] z-10  overflow-hidden text-center ">
       <div><img src={logo} alt="IPDC logo"  className="w-[109px] h-[53px] cursor-pointer"/>
       </div>
       <div className="flex justify-between ">
-        <ul className="flex  sm:space-x-7 w-[700px] tracking-[2px] ">
+        <ul className="md:flex hidden  sm:space-x-7 w-[700px] tracking-[2px] ">
         <li><a href="" className="">Retail</a><a href=""></a></li>
         <li><a href="">SME</a></li>
         <li><a href="">Corporate</a></li>
@@ -37,6 +35,8 @@ const Header = () => {
           <button className={`bg-[--pink-color] font-normal text-white text-[12px] h-9 w-[108px] font-[Rubik] rounded-md tracking-[2px]`}>
           iSERVICE
     </button>
+    <CgMenuMotion  className="text-3xl md:hidden"/>
+
         </div>
      
 
