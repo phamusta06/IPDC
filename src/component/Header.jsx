@@ -50,7 +50,7 @@ const Header = () => {
               />
             </div>
             
-            <button className="bg-bg-button py-4 text-xs tracking-[2px] px-7 md:flex hidden rounded-md text-white">
+            <button className="bg-bg-button py-4 font-semibold text-xs tracking-[2px] px-7 md:flex hidden rounded-md text-white">
               iSSERVICE
             </button>
           
